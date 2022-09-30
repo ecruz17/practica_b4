@@ -1,3 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+h2 {
+    color: black;
+}
+
+header {
+    padding: 10px;
+}
+
+.body {
+    padding-bottom: 0;
+    height: auto;
+}
+
+#body-container {
+    padding: 0;
+}
+
+#logo_anchor {
+    text-decoration: none !important;
+}
+
+#team_logos_container {
+    width: 100%;
+    background-color: #ECEFF4;
+    margin: 0;
+}
 
 /* Custom Logos Overflow Scrollbars */
 #team_logos {
@@ -6,9 +39,9 @@
     margin: 4px, 4px;
     padding: 4px;
     max-width: fit-content;
-    overflow: auto;
     white-space: nowrap;
-    overflow-y: scroll;
+    overflow-y: hidden;
+    overflow-x: auto;
     scrollbar-color: rgba(136, 133, 139, 0.233) rgb(255, 255, 255);
     scrollbar-width: thin;
 }
@@ -20,4 +53,107 @@
 
 #team_logos::-webkit-scrollbar-thumb {
     background: rgba(136, 133, 139, 0.233);
+}
+
+#carouselTopLeagues {
+    background-color: #ECEFF4;
+}
+
+#article_card {
+    background-color: #e0e0e0;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+#article_card_small {
+    background-color: #e0e0e0;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#article_card_small2 {
+    background-color: #e0e0e0;
+    padding: 0.5rem;
+    height: 90%;
+    margin-bottom: 1rem;
+}
+
+#article_card_small_bottom {
+    background-color: #e0e0e0;
+    padding: 0.5rem;
+}
+
+#section_header_text_cover {
+    font-weight: 800;
+}
+
+#section_header_text {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#section_header_text2 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+#section_header_text3 {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+#section_header_text_subsection1 {
+    font-weight: 600;
+    font-size: 3vw;
+}
+
+#article_img {
+    width: 100%;
+}
+
+#article_img_small {
+    width: 100%;
+}
+
+#article_tag {
+    color: #C00C00;
+    font-weight: 600;
+}
+
+#redaction {
+    display: inline;
+    font-size: .75rem;
+    line-height: .75rem;
+    font-weight: 600;
+}
+
+#comments_icon {
+    width: 2%;
+    color: #2666B1;
+}
+
+#comments_icon_small{
+    width: 10px;
+    color: #2666B1;
+}
+
+.divider {
+    width: 100%;
+    background-color: #DDE0E5;
+    height: 0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#commens_num{
+    color: #2666B1;
+    font-weight: 400;
+}
+
+#divider_div {
+    height: 1rem;
+}
+
+#footer_title {
+    font-weight: bolder;
 }
