@@ -157,3 +157,47 @@ header {
 #footer_title {
     font-weight: bolder;
 }
+
+
+#topLinks{
+    text-align: left;
+    height: 10px;
+}
+
+#topLinksUl{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* #header{
+    text-align: center;
+} */
+
+#options{
+    justify-content: right;
+    margin: 15px;
+}
+
+#option{
+    margin: 10px;
+    border:none;
+    border-radius:150px;
+}
+
+
+
+#navItem{
+    color: white;
+}
+
+.navItem:active{
+    background-color: black;
+}
+
+#naDrop{
+    background-color: black;
+}
+
