@@ -10,7 +10,13 @@ h2 {
 }
 
 header {
-    padding: 10px;
+    padding: 5px;
+}
+
+#header-top {
+    position: relative;
+    z-index: 1000;
+    overflow: visible !important;
 }
 
 .body {
@@ -22,8 +28,13 @@ header {
     padding: 0;
 }
 
+#logo {
+    margin: 0;
+}
+
 #logo_anchor {
     text-decoration: none !important;
+    margin: 0;
 }
 
 #team_logos_container {
@@ -157,3 +168,56 @@ header {
 #footer_title {
     font-weight: bolder;
 }
+
+
+#topLinks{
+    text-align: left;
+    height: 10px;
+}
+
+#topLinksUl{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+#options{
+    justify-content: right;
+    margin: 15px;
+}
+
+#option{
+    max-width: min-content;
+    border:none;
+    border-radius:150px;
+    padding: 1.2rem;
+}
+
+#session_btn {
+    background-color: white;
+    color: #C00C00;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+}
+
+#subscribe_btn {
+    background-color: #CC0000;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#navItem{
+    color: white;
+}
+
+.navItem:active{
+    background-color: black;
+}
+
+#naDrop{
+    background-color: black;
+}
+

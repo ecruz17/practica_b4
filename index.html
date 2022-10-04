@@ -11,9 +11,158 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;700;800;900&display=swap"
             rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
     <body>
-        <h1>Hola Guapo!</h1>
+        <div class="container-fluid" id="header">
+            <div id="header-top" class="row align-items-center text-center">
+                <div class="col d-none d-lg-block">
+                    <div class="row">
+                        <div class="col" style="border-right: 1px solid gray; padding-right: 3px; padding-top: 8px; padding-bottom: 8px;">
+                            <a href="#">
+                                <img src="./src/portada.jpg" style="width: 15%;">
+                                Portada de hoy
+                            </a>
+                        </div>
+                        <div class="col" style="border-right: 1px solid gray; padding-right: 3px; padding-top: 8px; padding-bottom: 8px;">
+                            <a href="#">
+                                <img src="./src/RadioMarca.png" style="width: 35%;">
+                                Radio Marca
+                            </a>
+                        </div>
+                        <div class="col" style="padding-right: 3px; padding-top: 8px; padding-bottom: 8px;">
+                            <a href="#">
+                            <img src="./src/CuidatePlus.jpg" style="width: 25%;">
+                            CuidatePlus
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col d-none d-sm-block" id="logo">
+                        <img src="./src/LogoMarca.png" style="width: 130px; padding-top: 6.84px; padding-bottom: 6.84;">
+                </div>
+                <div class="col d-none d-md-block">
+                        <div class="row">
+                            <div class="dropdown" id="option">
+                                <button class="btn btn-secondary dropdown-toggle disabled" type="button" id="triggerId" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false" style="background-color: white; color:gray; max-width: 30rem;">
+                                    <img src="./src/BanderaESP.png" alt="#" style="width: 50%;">
+                                    ES
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="triggerId">
+                                    <a class="dropdown-item" href="#">EN</a>
+                                    <a class="dropdown-item" href="#">MX</a>
+                                    <a class="dropdown-item" href="#">IT</a>
+                                    <a class="dropdown-item" href="#">FR</a>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger" type="button" id="subscribe_btn">Suscríbete</button>
+                            <button class="btn btn-danger" type="button" id="session_btn">Iniciar Sesión</button>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #C90511;">
+            <a class="navbar-brand d-block d-md-none " href="index.html">
+        <img src="./src/LogoMarcaBlanco.png" width="120" height="40" alt="Logo Marca">
+            </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+        <div class="navbar-nav text-center ml-auto mr-auto">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Fútbol
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">España</a>
+                    <a class="dropdown-item" href="#">Internacional</a>
+                    <a class="dropdown-item" href="#">América</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Baloncesto
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">España</a>
+                      <a class="dropdown-item" href="#">Internacional</a>
+                      <a class="dropdown-item" href="#">América</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Motor
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">España</a>
+                      <a class="dropdown-item" href="#">Internacional</a>
+                      <a class="dropdown-item" href="#">América</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Polideportivo
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">España</a>
+                      <a class="dropdown-item" href="#">Internacional</a>
+                      <a class="dropdown-item" href="#">América</a>
+                    </div>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Coches
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">España</a>
+                      <a class="dropdown-item" href="#">Internacional</a>
+                      <a class="dropdown-item" href="#">América</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link d-md-none .d-lg-block" href="#">Última hora</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-md-none .d-lg-block" href="#">Programación TV</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-md-none .d-lg-block" href="#">Fantasy</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Más+</a>
+                </li>
+                <li class="input-group mb-3">
+                  <input type="search" class="form-control" placeholder="Busca en Marca.com" aria-label="Search" aria-describedby="basic-addon1">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1" width="30" height="30"><i class="bi bi-search"></i></span>
+                  </div>
+                </li>
+              </ul>              
+        </div>
+    </div>
+        </nav>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        
+        <script>
+            $('#navId a').click(e => {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+        </script>
+
         <div id="team_logos_container">
             <div id="team_logos">
                 <a href="#" id="logo_anchor">
@@ -75,28 +224,29 @@
                 </a>
             </div>
         </div>
+
         <div class="container" id="body_container">
             <div class="divider"></div>
             <section>
-                <div class="row">                    
-                        <div id="article_card" class="col-12 col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                            <img id="article_img"
-                                src="https://phantom-marca.unidadeditorial.es/8457e08868017460a3c95ef738c30dd7/resize/660/f/webp/assets/multimedia/imagenes/2022/09/26/16641957015927.jpg"
-                                alt="fc_barcelona">                          
-                            <header>
-                                <span id="article_tag">FC BARCELONA</span>
-                                <a href="#">
-                                    <h2 id="section_header_text_cover">Araujo se opera</h2>
-                                </a>
-                                <div>
-                                    <span id="redaction">
-                                        M. CARMEN TORRES Y M. CORTEGANA 
-                                        <img id="comments_icon" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                        <a id="commens_num" href="#">69</a>                                
-                                    </span>                                    
-                                </div>
-                            </header>                            
-                        </div>                    
+                <div class="row">
+                    <div id="article_card" class="col-12 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                        <img id="article_img"
+                            src="https://phantom-marca.unidadeditorial.es/8457e08868017460a3c95ef738c30dd7/resize/660/f/webp/assets/multimedia/imagenes/2022/09/26/16641957015927.jpg"
+                            alt="fc_barcelona">
+                        <header>
+                            <span id="article_tag">FC BARCELONA</span>
+                            <a href="#">
+                                <h2 id="section_header_text_cover">Araujo se opera</h2>
+                            </a>
+                            <div>
+                                <span id="redaction">
+                                    M. CARMEN TORRES Y M. CORTEGANA
+                                    <img id="comments_icon" src="/src/comments_logo_transparent.png" alt="comments_icon">
+                                    <a id="commens_num" href="#">69</a>
+                                </span>
+                            </div>
+                        </header>
+                    </div>
                     <div class="col">
                         <div id="article_card_small">
                             <div class="row">
@@ -109,7 +259,8 @@
                                         <div>
                                             <span id="redaction">
                                                 M. CARMEN TORRES Y M. TORRES TORRES
-                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
+                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                    alt="comments_icon">
                                                 <a id="commens_num" href="#">69</a>
                                             </span>
                                         </div>
@@ -118,8 +269,8 @@
                                 <div class="col-6">
                                     <img id="article_img_small" src="https://picsum.photos/200?random=1" alt="fc_barcelona">
                                 </div>
-                            </div>                            
-                            
+                            </div>
+        
                         </div>
                         <div id="article_card_small">
                             <div class="row">
@@ -132,7 +283,8 @@
                                         <div>
                                             <span id="redaction">
                                                 M. CARMEN TORRES Y M. TORRES TORRES
-                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
+                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                    alt="comments_icon">
                                                 <a id="commens_num" href="#">69</a>
                                             </span>
                                         </div>
@@ -142,7 +294,7 @@
                                     <img id="article_img_small" src="https://picsum.photos/200?random=2" alt="fc_barcelona">
                                 </div>
                             </div>
-                        
+        
                         </div>
                         <div id="article_card_small_bottom">
                             <div class="row">
@@ -155,7 +307,8 @@
                                         <div>
                                             <span id="redaction">
                                                 M. CARMEN TORRES Y M. TORRES TORRES
-                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
+                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                    alt="comments_icon">
                                                 <a id="commens_num" href="#">69</a>
                                             </span>
                                         </div>
@@ -165,284 +318,329 @@
                                     <img id="article_img_small" src="https://picsum.photos/200?random=3" alt="fc_barcelona">
                                 </div>
                             </div>
-                        
+        
                         </div>
-                    </div>                    
+                    </div>
                 </div>
             </section>
             <div class="divider"></div>
             <section>
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    <div class="row">
-                        <div class="col-6">
-                            <img id="article_img"
-                                src="https://phantom-marca.unidadeditorial.es/ffe31566e1d27db93550f1ad7b072738/resize/660/f/webp/assets/multimedia/imagenes/2022/09/26/16641875010660.jpg"
-                                alt="fc_barcelona">
-                        </div>
-                        <div class="col-6">
-                            <header>
-                                <span id="article_tag">GPS NOTICIAS</span>
-                                <a href="#">
-                                    <h2 id="section_header_text_subsection1">Una persona que no conozco realiza cosas así como sin nada, estamos preocupados</h2>
-                                </a>
-                            </header>
-                        </div>
-                    </div>                  
-                    <div class="divider"></div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4">
-                            <div id="article_card_small">
-                                <div class="col" id="mini_col">
-                                    <img id="article_img_small" src="https://picsum.photos/200?random=4" alt="fc_barcelona">
-                                        <header>
-                                            <span id="article_tag">LAS NOTICIAS</span>
-                                            <a href="#">
-                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                            </a>
-                                            <div>
-                                                <span id="redaction">
-                                                    M. CARMEN TORRES Y M. TORRES TORRES
-                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                    <a id="commens_num" href="#">69</a>
-                                                </span>
-                                            </div>
-                                        </header>   
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-8">
-                            <div id="article_card_small">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <header>
-                                            <span id="article_tag">LAS NOTICIAS</span>
-                                            <a href="#">
-                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                            </a>
-                                            <div>
-                                                <span id="redaction">
-                                                    M. CARMEN TORRES Y M. TORRES TORRES
-                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                    <a id="commens_num" href="#">69</a>
-                                                </span>
-                                            </div>
-                                        </header>
-                                    </div>
-                                    <div class="col-6">
-                                        <img id="article_img_small" src="https://picsum.photos/200?random=5" alt="fc_barcelona">
-                                    </div>
-                                </div>
-                            
-                            </div>
-                            <div id="article_card_small">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <header>
-                                            <span id="article_tag">LAS NOTICIAS</span>
-                                            <a href="#">
-                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                            </a>
-                                            <div>
-                                                <span id="redaction">
-                                                    M. CARMEN TORRES Y M. TORRES TORRES
-                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                    <a id="commens_num" href="#">69</a>
-                                                </span>
-                                            </div>
-                                        </header>
-                                    </div>
-                                    <div class="col-6">
-                                        <img id="article_img_small" src="https://picsum.photos/200?random=6" alt="fc_barcelona">
-                                    </div>
-                                </div>
-                            
-                            </div>
-                            <div id="article_card_small_bottom">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <header>
-                                            <span id="article_tag">LAS NOTICIAS</span>
-                                            <a href="#">
-                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                            </a>
-                                            <div>
-                                                <span id="redaction">
-                                                    M. CARMEN TORRES Y M. TORRES TORRES
-                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                    <a id="commens_num" href="#">69</a>
-                                                </span>
-                                            </div>
-                                        </header>
-                                    </div>
-                                    <div class="col-6">
-                                        <img id="article_img_small" src="https://picsum.photos/200?random=7" alt="fc_barcelona">
-                                    </div>
-                                </div>
-                            
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>      
-                <div class="col-sm-4 d-none d-lg-block">
-                    <div class="container">
-                        <a href="#">Advertising</a>      
-                    </div>
-                    <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/xBaMqnZ4KS36sUS9Jb" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/weatherchannel-twc-the-weather-channel-jim-cantore-xBaMqnZ4KS36sUS9Jb">via GIPHY</a></p>
-                    <div class="container">
-                        <a href="#">
-                            Advertising
-                        </a>
-                    </div>
-                    <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/l0HUi9wxwHRrYBKSY" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/milk-advertising-cow-l0HUi9wxwHRrYBKSY">via GIPHY</a></p>
-                </div>  
-            </div>
-            </section>           
-            <div class="divider"></div>
-            <section>
                 <div class="row">
-                    <div class="col-12 col-lg-8 col-md-12 col-sm-12 col-xs-12">
-                    <div class="row">
-                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
-                            <div id="article_card_small">
-                                                            <div class="col" id="mini_col">
-                                                                <img id="article_img_small" src="https://picsum.photos/500/300?random=12" alt="fc_barcelona">
-                                                                <header>
-                                                                    <span id="article_tag">LAS NOTICIAS</span>
-                                                                    <a href="#">
-                                                                        <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                                                    </a>
-                                                                    <div>
-                                                                        <span id="redaction">
-                                                                            M. CARMEN TORRES Y M. TORRES TORRES
-                                                                            <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                                            <a id="commens_num" href="#">69</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </header>
-                                                            </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="row">
+                            <div class="col-6">
+                                <img id="article_img"
+                                    src="https://phantom-marca.unidadeditorial.es/ffe31566e1d27db93550f1ad7b072738/resize/660/f/webp/assets/multimedia/imagenes/2022/09/26/16641875010660.jpg"
+                                    alt="fc_barcelona">
+                            </div>
+                            <div class="col-6">
+                                <header>
+                                    <span id="article_tag">GPS NOTICIAS</span>
+                                    <a href="#">
+                                        <h2 id="section_header_text_subsection1">Una persona que no conozco realiza cosas así
+                                            como sin nada, estamos preocupados</h2>
+                                    </a>
+                                </header>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
-                            <div id="article_card_small">
+                        <div class="divider"></div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div id="article_card_small">
                                     <div class="col" id="mini_col">
-                                        <img id="article_img_small" src="https://picsum.photos/500/300?random=13" alt="fc_barcelona">
+                                        <img id="article_img_small" src="https://picsum.photos/200?random=4" alt="fc_barcelona">
+                                        <header>
+                                            <span id="article_tag">LAS NOTICIAS</span>
+                                            <a href="#">
+                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.
+                                                </h2>
+                                            </a>
+                                            <div>
+                                                <span id="redaction">
+                                                    M. CARMEN TORRES Y M. TORRES TORRES
+                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                        alt="comments_icon">
+                                                    <a id="commens_num" href="#">69</a>
+                                                </span>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+                                <div id="article_card_small">
+                                    <div class="row">
+                                        <div class="col-6">
                                             <header>
                                                 <span id="article_tag">LAS NOTICIAS</span>
                                                 <a href="#">
-                                                    <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
+                                                    <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le
+                                                        para.</h2>
                                                 </a>
                                                 <div>
                                                     <span id="redaction">
                                                         M. CARMEN TORRES Y M. TORRES TORRES
-                                                        <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
+                                                        <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                            alt="comments_icon">
                                                         <a id="commens_num" href="#">69</a>
                                                     </span>
                                                 </div>
-                                            </header>   
+                                            </header>
+                                        </div>
+                                        <div class="col-6">
+                                            <img id="article_img_small" src="https://picsum.photos/200?random=5"
+                                                alt="fc_barcelona">
+                                        </div>
                                     </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
-                            <div id="article_card_small">
-                                                            <div class="col" id="mini_col">
-                                                                <img id="article_img_small" src="https://picsum.photos/500/300?random=14" alt="fc_barcelona">
-                                                                <header>
-                                                                    <span id="article_tag">LAS NOTICIAS</span>
-                                                                    <a href="#">
-                                                                        <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                                                    </a>
-                                                                    <div>
-                                                                        <span id="redaction">
-                                                                            M. CARMEN TORRES Y M. TORRES TORRES
-                                                                            <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                                            <a id="commens_num" href="#">69</a>
-                                                                        </span>
-                                                                    </div>
-                                                                </header>
-                                                            </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
-                            <div id="article_card_small">
-                                <div class="col" id="mini_col">
-                                    <img id="article_img_small" src="https://picsum.photos/500/300?random=10" alt="fc_barcelona">
-                                    <header>
-                                        <span id="article_tag">LAS NOTICIAS</span>
-                                        <a href="#">
-                                            <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                        </a>
-                                        <div>
-                                            <span id="redaction">
-                                                M. CARMEN TORRES Y M. TORRES TORRES
-                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                <a id="commens_num" href="#">69</a>
-                                            </span>
+        
+                                </div>
+                                <div id="article_card_small">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <header>
+                                                <span id="article_tag">LAS NOTICIAS</span>
+                                                <a href="#">
+                                                    <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le
+                                                        para.</h2>
+                                                </a>
+                                                <div>
+                                                    <span id="redaction">
+                                                        M. CARMEN TORRES Y M. TORRES TORRES
+                                                        <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                            alt="comments_icon">
+                                                        <a id="commens_num" href="#">69</a>
+                                                    </span>
+                                                </div>
+                                            </header>
                                         </div>
-                                    </header>
+                                        <div class="col-6">
+                                            <img id="article_img_small" src="https://picsum.photos/200?random=6"
+                                                alt="fc_barcelona">
+                                        </div>
+                                    </div>
+        
+                                </div>
+                                <div id="article_card_small_bottom">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <header>
+                                                <span id="article_tag">LAS NOTICIAS</span>
+                                                <a href="#">
+                                                    <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le
+                                                        para.</h2>
+                                                </a>
+                                                <div>
+                                                    <span id="redaction">
+                                                        M. CARMEN TORRES Y M. TORRES TORRES
+                                                        <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                            alt="comments_icon">
+                                                        <a id="commens_num" href="#">69</a>
+                                                    </span>
+                                                </div>
+                                            </header>
+                                        </div>
+                                        <div class="col-6">
+                                            <img id="article_img_small" src="https://picsum.photos/200?random=7"
+                                                alt="fc_barcelona">
+                                        </div>
+                                    </div>
+        
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
-                            <div id="article_card_small">
-                                <div class="col" id="mini_col">
-                                    <img id="article_img_small" src="https://picsum.photos/500/300?random=9" alt="fc_barcelona">
-                                    <header>
-                                        <span id="article_tag">LAS NOTICIAS</span>
-                                        <a href="#">
-                                            <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                        </a>
-                                        <div>
-                                            <span id="redaction">
-                                                M. CARMEN TORRES Y M. TORRES TORRES
-                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                <a id="commens_num" href="#">69</a>
-                                            </span>
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-4 col-md-4 col-sm-12">
-                            <div id="article_card_small">
-                                <div class="col" id="mini_col">
-                                    <img id="article_img_small" src="https://picsum.photos/500/300?random=8" alt="fc_barcelona">
-                                    <header>
-                                        <span id="article_tag">LAS NOTICIAS</span>
-                                        <a href="#">
-                                            <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.</h2>
-                                        </a>
-                                        <div>
-                                            <span id="redaction">
-                                                M. CARMEN TORRES Y M. TORRES TORRES
-                                                <img id="comments_icon_small" src="/src/comments_logo_transparent.png" alt="comments_icon">
-                                                <a id="commens_num" href="#">69</a>
-                                            </span>
-                                        </div>
-                                    </header>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        
                     </div>
                     <div class="col-sm-4 d-none d-lg-block">
                         <div class="container">
-                            <a href="#">Advertising</a>      
+                            <a href="#">Advertising</a>
                         </div>
-                        <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/xBaMqnZ4KS36sUS9Jb" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/weatherchannel-twc-the-weather-channel-jim-cantore-xBaMqnZ4KS36sUS9Jb">via GIPHY</a></p>                    
-                    </div>     
-                </div>                    
+                        <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe
+                                src="https://giphy.com/embed/xBaMqnZ4KS36sUS9Jb" width="100%" height="100%"
+                                style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                        <p><a
+                                href="https://giphy.com/gifs/weatherchannel-twc-the-weather-channel-jim-cantore-xBaMqnZ4KS36sUS9Jb">via
+                                GIPHY</a></p>
+                        <div class="container">
+                            <a href="#">
+                                Advertising
+                            </a>
+                        </div>
+                        <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe
+                                src="https://giphy.com/embed/l0HUi9wxwHRrYBKSY" width="100%" height="100%"
+                                style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                        <p><a href="https://giphy.com/gifs/milk-advertising-cow-l0HUi9wxwHRrYBKSY">via GIPHY</a></p>
+                    </div>
+                </div>
+            </section>
+            <div class="divider"></div>
+            <section>
+                <div class="row">
+                    <div class="col-12 col-lg-8 col-md-12 col-sm-12 col-xs-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                                <div id="article_card_small">
+                                    <div class="col" id="mini_col">
+                                        <img id="article_img_small" src="https://picsum.photos/500/300?random=12"
+                                            alt="fc_barcelona">
+                                        <header>
+                                            <span id="article_tag">LAS NOTICIAS</span>
+                                            <a href="#">
+                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.
+                                                </h2>
+                                            </a>
+                                            <div>
+                                                <span id="redaction">
+                                                    M. CARMEN TORRES Y M. TORRES TORRES
+                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                        alt="comments_icon">
+                                                    <a id="commens_num" href="#">69</a>
+                                                </span>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                                <div id="article_card_small">
+                                    <div class="col" id="mini_col">
+                                        <img id="article_img_small" src="https://picsum.photos/500/300?random=13"
+                                            alt="fc_barcelona">
+                                        <header>
+                                            <span id="article_tag">LAS NOTICIAS</span>
+                                            <a href="#">
+                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.
+                                                </h2>
+                                            </a>
+                                            <div>
+                                                <span id="redaction">
+                                                    M. CARMEN TORRES Y M. TORRES TORRES
+                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                        alt="comments_icon">
+                                                    <a id="commens_num" href="#">69</a>
+                                                </span>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                                <div id="article_card_small">
+                                    <div class="col" id="mini_col">
+                                        <img id="article_img_small" src="https://picsum.photos/500/300?random=14"
+                                            alt="fc_barcelona">
+                                        <header>
+                                            <span id="article_tag">LAS NOTICIAS</span>
+                                            <a href="#">
+                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.
+                                                </h2>
+                                            </a>
+                                            <div>
+                                                <span id="redaction">
+                                                    M. CARMEN TORRES Y M. TORRES TORRES
+                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                        alt="comments_icon">
+                                                    <a id="commens_num" href="#">69</a>
+                                                </span>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                                <div id="article_card_small">
+                                    <div class="col" id="mini_col">
+                                        <img id="article_img_small" src="https://picsum.photos/500/300?random=10"
+                                            alt="fc_barcelona">
+                                        <header>
+                                            <span id="article_tag">LAS NOTICIAS</span>
+                                            <a href="#">
+                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.
+                                                </h2>
+                                            </a>
+                                            <div>
+                                                <span id="redaction">
+                                                    M. CARMEN TORRES Y M. TORRES TORRES
+                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                        alt="comments_icon">
+                                                    <a id="commens_num" href="#">69</a>
+                                                </span>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                                <div id="article_card_small">
+                                    <div class="col" id="mini_col">
+                                        <img id="article_img_small" src="https://picsum.photos/500/300?random=9"
+                                            alt="fc_barcelona">
+                                        <header>
+                                            <span id="article_tag">LAS NOTICIAS</span>
+                                            <a href="#">
+                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.
+                                                </h2>
+                                            </a>
+                                            <div>
+                                                <span id="redaction">
+                                                    M. CARMEN TORRES Y M. TORRES TORRES
+                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                        alt="comments_icon">
+                                                    <a id="commens_num" href="#">69</a>
+                                                </span>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-12">
+                                <div id="article_card_small">
+                                    <div class="col" id="mini_col">
+                                        <img id="article_img_small" src="https://picsum.photos/500/300?random=8"
+                                            alt="fc_barcelona">
+                                        <header>
+                                            <span id="article_tag">LAS NOTICIAS</span>
+                                            <a href="#">
+                                                <h2 id="section_header_text2">Araujo se opera de nuevo, otra vez, no le para.
+                                                </h2>
+                                            </a>
+                                            <div>
+                                                <span id="redaction">
+                                                    M. CARMEN TORRES Y M. TORRES TORRES
+                                                    <img id="comments_icon_small" src="/src/comments_logo_transparent.png"
+                                                        alt="comments_icon">
+                                                    <a id="commens_num" href="#">69</a>
+                                                </span>
+                                            </div>
+                                        </header>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 d-none d-lg-block">
+                        <div class="container">
+                            <a href="#">Advertising</a>
+                        </div>
+                        <div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe
+                                src="https://giphy.com/embed/xBaMqnZ4KS36sUS9Jb" width="100%" height="100%"
+                                style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+                        <p><a
+                                href="https://giphy.com/gifs/weatherchannel-twc-the-weather-channel-jim-cantore-xBaMqnZ4KS36sUS9Jb">via
+                                GIPHY</a></p>
+                    </div>
+                </div>
             </section>
             <section>
-            <div class="divider"></div>
+                <div class="divider"></div>
                 <div class="row">
                     <div class="col-12 col-lg-3 col-md-3">
                         <div id="article_card_small2">
                             <div class="col" id="mini_col">
-                                <img id="article_img_small" src="https://phantom-marca.unidadeditorial.es/21eb36712954a0ac3fae8f5bdeafb6f5/resize/660/f/webp/assets/multimedia/imagenes/2022/09/30/16645550825417.jpg" alt="mexico">
+                                <img id="article_img_small"
+                                    src="https://phantom-marca.unidadeditorial.es/21eb36712954a0ac3fae8f5bdeafb6f5/resize/660/f/webp/assets/multimedia/imagenes/2022/09/30/16645550825417.jpg"
+                                    alt="mexico">
                                 <header>
                                     <span id="article_tag">MÉXICO</span>
                                     <a href="#">
@@ -455,7 +653,9 @@
                     <div class="col-12 col-lg-3 col-md-3">
                         <div id="article_card_small2">
                             <div class="col" id="mini_col">
-                                <img id="article_img_small" src="https://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2022/09/30/16645533014633.jpg" alt="argentina">
+                                <img id="article_img_small"
+                                    src="https://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2022/09/30/16645533014633.jpg"
+                                    alt="argentina">
                                 <header>
                                     <span id="article_tag">ARGENTINA</span>
                                     <a href="#">
@@ -468,7 +668,9 @@
                     <div class="col-12 col-lg-3 col-md-3">
                         <div id="article_card_small2">
                             <div class="col" id="mini_col">
-                                <img id="article_img_small" src="https://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2022/09/30/16645463111530.jpg" alt="argentina">
+                                <img id="article_img_small"
+                                    src="https://e00-ar-marca.uecdn.es/claro/assets/multimedia/imagenes/2022/09/30/16645463111530.jpg"
+                                    alt="argentina">
                                 <header>
                                     <span id="article_tag">ARGENTINA</span>
                                     <a href="#">
@@ -481,7 +683,9 @@
                     <div class="col-12 col-lg-3 col-md-3">
                         <div id="article_card_small2">
                             <div class="col" id="mini_col">
-                                <img id="article_img_small" src="https://e00-co-marca.uecdn.es/claro/assets/multimedia/imagenes/2022/09/29/16644798212290.jpg" alt="colombia">
+                                <img id="article_img_small"
+                                    src="https://e00-co-marca.uecdn.es/claro/assets/multimedia/imagenes/2022/09/29/16644798212290.jpg"
+                                    alt="colombia">
                                 <header>
                                     <span id="article_tag">COLOMBIA</span>
                                     <a href="#">
@@ -494,31 +698,32 @@
                 </div>
             </section>
         </div>
-            <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
-            
-                <p id="footer_title" class="col-md-4 mb-0 text-muted">&copy; Septiembre 2022 Unidad Editorial Información Deportiva,
-                    S.L.U. Todos los derechos reservados.</p>
-            
-                <a href="/"
-                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                    <svg class="bi me-2" width="40" height="32">
-                        <use xlink:href="#bootstrap" />
-                    </svg>
-                </a>
-            
-                <ul class="nav col-md-4 justify-content-center">
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Política de cookies</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Configuración de cookies</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Política de privacidad</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Términos y condiciones de uso</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Certificado por OJD</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ayuda</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nuestro equipo</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Venta de contenidos</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Código ético</a></li>
-                </ul>
-            </footer>
+        <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+        
+            <p id="footer_title" class="col-md-4 mb-0 text-muted">&copy; Septiembre 2022 Unidad Editorial Información Deportiva,
+                S.L.U. Todos los derechos reservados.</p>
+        
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <svg class="bi me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-center">
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Política de cookies</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Configuración de cookies</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Política de privacidad</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Términos y condiciones de uso</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Certificado por OJD</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contacto</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ayuda</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nuestro equipo</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Venta de contenidos</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Código ético</a></li>
+            </ul>
+        </footer>
+
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
