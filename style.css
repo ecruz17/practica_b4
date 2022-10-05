@@ -13,10 +13,45 @@ header {
     padding: 5px;
 }
 
-#header-top {
+#header {
     position: relative;
     z-index: 1000;
-    overflow: visible !important;
+}
+
+#header-top {
+    position: relative;
+    overflow: visible;
+    z-index: 1000;
+}
+
+#header_anchor { 
+    color: black;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: 0.15s;
+}
+
+#header_anchor:hover {
+    color: #CC0000;
+}
+
+#row-header {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#row-col-dropdown {
+    position: relative;
+    z-index: 1000;
+}
+
+#row-header-dropdown {
+    position: relative;
+    z-index: 1000;
+}
+
+#navbar_top {
+    z-index: 1;
 }
 
 .body {
@@ -30,6 +65,7 @@ header {
 
 #logo {
     margin: 0;
+    padding-bottom: 0.5rem;
 }
 
 #logo_anchor {
@@ -66,20 +102,16 @@ header {
     background: rgba(136, 133, 139, 0.233);
 }
 
-#carouselTopLeagues {
-    background-color: #ECEFF4;
-}
-
 #article_card {
     background-color: #e0e0e0;
     padding: 0;
-    margin-bottom: 1rem;
+    max-height: min-content;
 }
 
 #article_card_small {
     background-color: #e0e0e0;
     padding: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #article_card_small2 {
@@ -193,6 +225,7 @@ li{
     border:none;
     border-radius:150px;
     padding: 1.2rem;
+    cursor: pointer;
 }
 
 #session_btn {
@@ -221,3 +254,8 @@ li{
     background-color: black;
 }
 
+#triggerId {
+    padding: 0.2rem;
+    border-style: none;
+    width: fit-content;
+}
