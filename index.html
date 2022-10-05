@@ -14,46 +14,94 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
     <body>
+        <script>
+            window.onload = function () {
+                $('#cookiesModal').modal('show')
+            }
+        </script>
+        <div class="modal fade" id="cookiesModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Política de Cookies</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <div class="col">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, asperiores! Accusantium adipisci autem provident
+                                nisi, ipsa minus placeat maiores amet? Sapiente eum illo, soluta voluptatum autem assumenda? Vitae molestiae quidem qui
+                                adipisci natus sed ex unde deserunt temporibus incidunt eligendi officia dolores optio fugit modi, illo exercitationem
+                                distinctio obcaecati ipsum? Aperiam at autem laborum sed.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container-fluid" id="header">
             <div id="header-top" class="row align-items-center text-center">
                 <div class="col d-none d-lg-block">
-                    <div class="row">
-                        <div class="col" style="border-right: 1px solid gray; padding-right: 3px; padding-top: 8px; padding-bottom: 8px;">
-                            <a href="#">
-                                <img src="./src/portada.jpg" style="width: 15%;">
-                                Portada de hoy
-                            </a>
+                    <div id="row-header" class="row">
+                            <div class="col-4">
+                                <a id="header_anchor" href="#">
+                                    <img src="./src/portada.jpg" style="width: 15%;">
+                                    Portada de hoy
+                                </a>
+                            </div>                        
+                        <div style="border-right: 1px solid gray; padding-right: 3px; padding-top: 8px; padding-bottom: 8px;"></div>
+                        <div class="col-4">
+                            <div class="row">
+                                <a id="header_anchor" href="#">
+                                    <img src="./src/RadioMarca.png" style="width: 35%;">
+                                    Radio Marca
+                                </a>                            
+                            </div>
                         </div>
-                        <div class="col" style="border-right: 1px solid gray; padding-right: 3px; padding-top: 8px; padding-bottom: 8px;">
-                            <a href="#">
-                                <img src="./src/RadioMarca.png" style="width: 35%;">
-                                Radio Marca
-                            </a>
-                        </div>
-                        <div class="col" style="padding-right: 3px; padding-top: 8px; padding-bottom: 8px;">
-                            <a href="#">
-                            <img src="./src/CuidatePlus.jpg" style="width: 25%;">
-                            CuidatePlus
-                            </a>
+                        <div style="border-right: 1px solid gray; padding-right: 3px; padding-top: 8px; padding-bottom: 8px;"></div>
+                        <div class="col-4">
+                                <a id="header_anchor" href="#">
+                                    <img src="./src/CuidatePlus.jpg" style="width: 15%;">
+                                    CuidatePlus
+                                </a>
+                                <div style="border-right: 1px solid gray;"></div>
                         </div>
                     </div>
                 </div>
-                <div class="col d-none d-sm-block" id="logo">
-                        <img src="./src/LogoMarca.png" style="width: 130px; padding-top: 6.84px; padding-bottom: 6.84;">
+                <div class="col d-none d-md-block" id="logo">
+                        <img src="./src/LogoMarca.png" style="width: 140px; padding-top: 6.84px; padding-bottom: 6.84;">
                 </div>
-                <div class="col d-none d-md-block">
-                        <div class="row">
-                            <div class="dropdown" id="option">
-                                <button class="btn btn-secondary dropdown-toggle disabled" type="button" id="triggerId" data-toggle="dropdown"
+                <div id="row-col-dropdown" class="col d-none d-md-block">
+                        <div id="row-header-dropdown" class="row">
+                            <div class="dropdown" id="option" disabled>
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
                                     aria-haspopup="true" aria-expanded="false" style="background-color: white; color:gray; max-width: 30rem;">
                                     <img src="./src/BanderaESP.png" alt="#" style="width: 50%;">
                                     ES
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="triggerId">
-                                    <a class="dropdown-item" href="#">EN</a>
-                                    <a class="dropdown-item" href="#">MX</a>
-                                    <a class="dropdown-item" href="#">IT</a>
-                                    <a class="dropdown-item" href="#">FR</a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="./src/BanderaESP.png" alt="#" style="width: 20%;">
+                                        EN                                       
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="./src/BanderaMX.jpg" alt="#" style="width: 20%;">
+                                        MX
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="./src/BanderaIT.png" alt="#" style="width: 20%;">
+                                        IT
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        <img src="./src/BanderaFR.png" alt="#" style="width: 20%;">
+                                        FR
+                                    </a>
                                 </div>
                             </div>
                             <button class="btn btn-danger" type="button" id="subscribe_btn">Suscríbete</button>
@@ -62,7 +110,7 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #C90511;">
+        <nav id="navbar_top" class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #C90511;">
             <a class="navbar-brand d-block d-md-none " href="index.html">
         <img src="./src/LogoMarcaBlanco.png" width="120" height="40" alt="Logo Marca">
             </a>
@@ -248,7 +296,7 @@
                         </header>
                     </div>
                     <div class="col">
-                        <div id="article_card_small">
+                        <div style="margin-top: 1rem;" id="article_card_small">
                             <div class="row">
                                 <div class="col-6">
                                     <header>
