@@ -51,16 +51,12 @@ header {
 }
 
 #navbar_top {
-    z-index: 1;
+    z-index: 50;
 }
 
 .body {
     padding-bottom: 0;
     height: auto;
-}
-
-#body-container {
-    padding: 0;
 }
 
 #logo {
@@ -128,6 +124,8 @@ header {
 
 #section_header_text_cover {
     font-weight: 800;
+    font-size: 4vw;
+    min-width: 1.5rem;
 }
 
 #section_header_text {
@@ -258,4 +256,32 @@ li{
     padding: 0.2rem;
     border-style: none;
     width: fit-content;
+}
+
+#modal_btn {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#carousel_main {
+    margin-top: 1rem;
+    background-color: #CC0000;
+}
+
+#carousel-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.carousel-control-next,
+.carousel-control-prev
+
+/*, .carousel-indicators */
+    {
+    filter: invert(100%);
+}
+
+#carousel_inner_id {
+    padding-right: 5rem;
+    padding-left: 5rem;
 }
