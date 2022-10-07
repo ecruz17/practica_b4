@@ -10,7 +10,48 @@ h2 {
 }
 
 header {
-    padding: 10px;
+    padding: 5px;
+}
+
+#header {
+    position: relative;
+    z-index: 1000;
+}
+
+#header-top {
+    position: relative;
+    overflow: visible;
+    z-index: 1000;
+}
+
+#header_anchor { 
+    color: black;
+    font-weight: bold;
+    text-decoration: none !important;
+    transition: 0.15s;
+}
+
+#header_anchor:hover {
+    color: #CC0000;
+}
+
+#row-header {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+#row-col-dropdown {
+    position: relative;
+    z-index: 1000;
+}
+
+#row-header-dropdown {
+    position: relative;
+    z-index: 1000;
+}
+
+#navbar_top {
+    z-index: 50;
 }
 
 .body {
@@ -18,12 +59,14 @@ header {
     height: auto;
 }
 
-#body-container {
-    padding: 0;
+#logo {
+    margin: 0;
+    padding-bottom: 0.5rem;
 }
 
 #logo_anchor {
     text-decoration: none !important;
+    margin: 0;
 }
 
 #team_logos_container {
@@ -55,20 +98,16 @@ header {
     background: rgba(136, 133, 139, 0.233);
 }
 
-#carouselTopLeagues {
-    background-color: #ECEFF4;
-}
-
 #article_card {
     background-color: #e0e0e0;
     padding: 0;
-    margin-bottom: 1rem;
+    max-height: min-content;
 }
 
 #article_card_small {
     background-color: #e0e0e0;
     padding: 0.5rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 #article_card_small2 {
@@ -85,6 +124,8 @@ header {
 
 #section_header_text_cover {
     font-weight: 800;
+    font-size: 4vw;
+    min-width: 1.5rem;
 }
 
 #section_header_text {
@@ -156,4 +197,91 @@ header {
 
 #footer_title {
     font-weight: bolder;
+}
+
+
+#topLinks{
+    text-align: left;
+    height: 10px;
+}
+
+#topLinksUl{
+    display: flex;
+}
+
+li{
+    list-style-type: none;
+}
+
+#options{
+    justify-content: right;
+    margin: 15px;
+}
+
+#option{
+    max-width: min-content;
+    border:none;
+    border-radius:150px;
+    padding: 1.2rem;
+    cursor: pointer;
+}
+
+#session_btn {
+    background-color: white;
+    color: #C00C00;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    margin-left: 1rem;
+}
+
+#subscribe_btn {
+    background-color: #CC0000;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+#navItem{
+    color: white;
+}
+
+.navItem:active{
+    background-color: black;
+}
+
+#naDrop{
+    background-color: black;
+}
+
+#triggerId {
+    padding: 0.2rem;
+    border-style: none;
+    width: fit-content;
+}
+
+#modal_btn {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#carousel_main {
+    margin-top: 1rem;
+    background-color: #CC0000;
+}
+
+#carousel-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.carousel-control-next,
+.carousel-control-prev
+
+/*, .carousel-indicators */
+    {
+    filter: invert(100%);
+}
+
+#carousel_inner_id {
+    padding-right: 5rem;
+    padding-left: 5rem;
 }
