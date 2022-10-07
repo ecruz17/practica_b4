@@ -102,6 +102,7 @@ header {
     background-color: #e0e0e0;
     padding: 0;
     max-height: min-content;
+    margin-left: 10px
 }
 
 #article_card_small {
@@ -284,4 +285,22 @@ li{
 #carousel_inner_id {
     padding-right: 5rem;
     padding-left: 5rem;
+}
+
+#black_footer {
+    background-color:black; 
+    padding: 20px;
+    text-align: center; 
+    color:white;
+
+}
+
+#footer-divider {
+    height: 2px;
+    background-color: white;
+    width: 100%;
+}
+
+#anchor_footer {
+    color: white;
 }
