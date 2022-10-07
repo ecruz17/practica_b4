@@ -13,6 +13,7 @@ header {
     padding: 5px;
 }
 
+
 #header {
     position: relative;
     z-index: 1000;
@@ -102,7 +103,6 @@ header {
     background-color: #e0e0e0;
     padding: 0;
     max-height: min-content;
-    margin-left: 10px
 }
 
 #article_card_small {
@@ -288,11 +288,10 @@ li{
 }
 
 #black_footer {
-    background-color:black; 
+    background-color: #222222; 
     padding: 20px;
     text-align: center; 
     color:white;
-
 }
 
 #footer-divider {
@@ -303,4 +302,58 @@ li{
 
 #anchor_footer {
     color: white;
+}
+
+#social_btn {
+    width: 30px;
+    height: 30px;
+    background-color: #2666B1;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    border-style: none;
+    border-radius: 100px;
+    transition: 0.15s;
+}
+
+#social_btn2 {
+    width: 30px;
+    height: 30px;
+    background-color: #5288c5;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    border-style: none;
+    border-radius: 100px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    transition: 0.15s;
+}
+
+#social_btn3 {
+    width: 30px;
+    height: 30px;
+    background-color: #af3194;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+    border-style: none;
+    border-radius: 100px;
+    transition: 0.15s;
+}
+
+#social_btn:hover {
+    background-color: #4a77aa;
+}
+
+#social_btn2:hover {
+    background-color: #cad0d6;
+}
+
+#social_btn3:hover {
+    background-color: #cad0d6;
+}
+
+#btns_social {
+    margin-top: 1rem;
 }

@@ -13,13 +13,12 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;300;400;500;700;800;900&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     </head>
     <body>
         <script>
-            window.onload = function () {
-                $('#cookiesModal').modal('show')
-            }
+            // window.onload = function () {
+            //     $('#cookiesModal').modal('show')
+            // }
         </script>
         <div class="modal fade" id="cookiesModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -1058,67 +1057,74 @@
                 </div>
             </section>
         </div>
-        <div class="row d-none d-md-block" id="black_footer">
+        <div class="row-fluid d-none d-md-block" id="black_footer">
             <div class="container">
-            <div class="col">
-                    <h5>Otras webs de Unidad Editorial</h5>
-                    <div id="footer-divider"></div>
-                    <div class="row">
-                        <div class="col-3">
-                            <p style="color: white; font-weight: bold;">Marca</p>
-                            <li>
-                                <ul>
-                                    <a id="anchor_footer" href="#">App Marca</a>
-                                </ul>
-                                <ul>
-                                    <a id="anchor_footer" href="#">Clasificación</a>
-                                </ul>
-                                <ul>
-                                    <a id="anchor_footer" href="#">Calendario</a>
-                                </ul>
-                            </li>
-                        </div>
-                        <div class="col-3">
-                            <p style="color: white; font-weight: bold;">Marca</p>
-                            <li>
-                                <ul>
-                                    <a id="anchor_footer" href="#">App Marca</a>
-                                </ul>
-                                <ul>
-                                    <a id="anchor_footer" href="#">Clasificación</a>
-                                </ul>
-                                <ul>
-                                    <a id="anchor_footer" href="#">Calendario</a>
-                                </ul>
-                            </li>
-                        </div>
-                        <div class="col-3">
-                            <p style="color: white; font-weight: bold;">Marca</p>
-                            <li>
-                                <ul>
-                                    <a id="anchor_footer" href="#">App Marca</a>
-                                </ul>
-                                <ul>
-                                    <a id="anchor_footer" href="#">Clasificación</a>
-                                </ul>
-                                <ul>
-                                    <a id="anchor_footer" href="#">Calendario</a>
-                                </ul>
-                            </li>
-                        </div>
-                        <div class="col-3">
-                            <p style="color: white; font-weight: bold;">Marca</p>
-                            <li>
-                                <ul>
-                                    <a id="anchor_footer" href="#">App Marca</a>
-                                </ul>
-                                <ul>
-                                    <a id="anchor_footer" href="#">Clasificación</a>
-                                </ul>
-                                <ul>
-                                    <a id="anchor_footer" href="#">Calendario</a>
-                                </ul>
-                            </li>
+                <div class="col">
+                        <h5>Otras webs de Unidad Editorial</h5>
+                        <div id="footer-divider"></div>
+                        <div class="row">
+                            <div class="col-3">
+                                <p style="color: white; font-weight: bold;">Marca</p>
+                                <li>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">App Marca</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Clasificación</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Calendario</a>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="col-3">
+                                <p style="color: white; font-weight: bold;">Ocio y Moda</p>
+                                <li>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Tiramillas</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Moda - Telva</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Traductor</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Programación TV</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Marca Entradas</a>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="col-3">
+                                <p style="color: white; font-weight: bold;">Unidad Editorial</p>
+                                <li>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">El Mundo</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Diseño</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Diario Médico</a>
+                                    </ul>
+                                </li>
+                            </div>
+                            <div class="col-3">
+                                <p style="color: white; font-weight: bold;">Formación y Empleo</p>
+                                <li>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Escuela Unidad Editorial</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Unidad Editorial</a>
+                                    </ul>
+                                    <ul>
+                                        <a id="anchor_footer" href="#">Expansión y Empleo</a>
+                                    </ul>
+                                </li>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1129,12 +1135,11 @@
             <p id="footer_title" class="col-md-4 mb-0 text-muted">&copy; Septiembre 2022 Unidad Editorial Información Deportiva,
                 S.L.U. Todos los derechos reservados.</p>
         
-            <a href="/"
-                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-                <svg class="bi me-2" width="40" height="32">
-                    <use xlink:href="#bootstrap" />
-                </svg>
-            </a>
+            <div id="btns_social" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <button id="social_btn">f</button>
+                <button id="social_btn2">t</button>
+                <button id="social_btn3">i</button>            
+            </div>
         
             <ul class="nav col-md-4 justify-content-center">
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Política de cookies</a></li>
@@ -1146,7 +1151,7 @@
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Ayuda</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Nuestro equipo</a></li>
                 <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Venta de contenidos</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Código ético</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Código ético</a></li>              
             </ul>
         </footer>
 
