@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>MARCA Clon</title>
+        <link rel="icon" href="./src/marcalogo.ico">
+        <title>MARCA - La original no la copia</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="carousel.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +24,8 @@
         <div class="modal fade" id="cookiesModal" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Política de Cookies</h5>
+                    <div class="modal-header">                       
+                        <img src="./src/LogoMarca.png" alt="Logo_MARCA" style="width: 20%;">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -31,17 +33,37 @@
                     <div class="modal-body">
                         <div class="container-fluid">
                             <div class="col">
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, asperiores! Accusantium adipisci autem provident
-                                nisi, ipsa minus placeat maiores amet? Sapiente eum illo, soluta voluptatum autem assumenda? Vitae molestiae quidem qui
-                                adipisci natus sed ex unde deserunt temporibus incidunt eligendi officia dolores optio fugit modi, illo exercitationem
-                                distinctio obcaecati ipsum? Aperiam at autem laborum sed.
+                                <h5 class="modal-title">Aviso de privacidad</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, asperiores! Accusantium adipisci autem provident
+                                    nisi, ipsa minus placeat maiores amet? Sapiente eum illo, soluta voluptatum autem assumenda? Vitae molestiae quidem qui
+                                    adipisci natus sed ex unde deserunt temporibus incidunt eligendi officia dolores optio fugit modi, illo exercitationem
+                                    distinctio obcaecati ipsum? Aperiam at autem laborum sed.
+                                </p>   
+                                <h5 class="modal-title">Tratamiento de datos</h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate, asperiores! Accusantium adipisci autem
+                                    provident
+                                    nisi, ipsa minus placeat maiores amet? Sapiente eum illo, soluta voluptatum autem assumenda? Vitae molestiae quidem
+                                    qui
+                                    adipisci natus sed ex unde deserunt temporibus incidunt eligendi officia dolores optio fugit modi, illo
+                                    exercitationem
+                                    distinctio obcaecati ipsum? Aperiam at autem laborum sed.
+                                </p>
+                                <a href="#">Ver nuestros socios</a>
                             </div>
                         </div>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
-                    </div>
+                    
+                        <div class="row justify-content-space-around">
+                            <div id="modal_btn" class="col-6 align-items-center">
+                                <button id="bt_reject" type="button" class="btn btn-primary" data-dismiss="modal">Configurar</button>
+                            </div>
+                            <div id="modal_btn" class="col-6 align-items-center">
+                                <button id="bt_accept" type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                            </div>
+                        </div>                        
+                    
                 </div>
             </div>
         </div>
@@ -68,7 +90,7 @@
                         <div class="col-4">
                                 <a id="header_anchor" href="#">
                                     <img src="./src/CuidatePlus.jpg" style="width: 15%;">
-                                    CuidatePlus
+                                    CuídatePlus
                                 </a>
                                 <div style="border-right: 1px solid gray;"></div>
                         </div>
@@ -80,15 +102,15 @@
                 <div id="row-col-dropdown" class="col d-none d-md-block">
                         <div id="row-header-dropdown" class="row">
                             <div class="dropdown" id="option" disabled>
-                                <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown"
+                                <button  class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" 
                                     aria-haspopup="true" aria-expanded="false" style="background-color: white; color:gray; max-width: 30rem;">
                                     <img src="./src/BanderaESP.png" alt="#" style="width: 50%;">
                                     ES
                                 </button>
                                 <div class="dropdown-menu" aria-labelledby="triggerId">
                                     <a class="dropdown-item" href="#">
-                                        <img src="./src/BanderaESP.png" alt="#" style="width: 20%;">
-                                        EN                                       
+                                        <img src="./src/BanderaEN.png" alt="#" style="width: 20%;">
+                                        EN                                
                                     </a>
                                     <a class="dropdown-item" href="#">
                                         <img src="./src/BanderaMX.jpg" alt="#" style="width: 20%;">
@@ -210,7 +232,6 @@
                 $(this).tab('show');
             });
         </script>
-
         <div id="team_logos_container">
             <div id="team_logos">
                 <a href="#" id="logo_anchor">
@@ -271,9 +292,300 @@
                     <img src="/src/team_20.png" alt="" id="team_logo">
                 </a>
             </div>
-        </div>
-
-        <div class="container" id="body_container">
+        </div>        
+        <div class="container" id="body-container">      
+            <div id="carousel_main" class="jumbotron jumbotron-fluid py-1 mb-1">
+                <div class="container-fluid justify-content-center">
+                    <div class="row align-items-center">         
+                        <div class="col">      
+                            <div id="carousel-container" class="container">
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                    </ol>
+                                    <div id="carousel_inner_id" class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row ">
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_1.png" alt="" style="width: 7%;"> Equipo 1
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">0</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_2.png" alt="" style="width: 7%;"> Equipo 2
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">4</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_3.png" alt="" style="width: 7%;"> Equipo 3
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">1</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_4.png" alt="" style="width: 7%;"> Equipo 4
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">3</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_5.png" alt="" style="width: 7%;"> Equipo 5
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">4</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_6.png" alt="" style="width: 7%;"> Equipo 6
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">1</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row ">
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_1.png" alt="" style="width: 7%;"> Equipo 1
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">1</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_2.png" alt="" style="width: 7%;"> Equipo 2
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">6</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_3.png" alt="" style="width: 7%;"> Equipo 3
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">2</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_4.png" alt="" style="width: 7%;"> Equipo 4
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">7</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_5.png" alt="" style="width: 7%;"> Equipo 5
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">5</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_6.png" alt="" style="width: 7%;"> Equipo 6
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">3</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="row ">
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_7.png" alt="" style="width: 7%;"> Equipo 7
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">1</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_8.png" alt="" style="width: 7%;"> Equipo 8
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">6</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_9.png" alt="" style="width: 7%;"> Equipo 9
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">2</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_10.png" alt="" style="width: 7%;"> Equipo 10
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">7</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="col-12 col-lg-4">
+                                                    <table class="table table-hover table-sm table border-bottom">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col" colspan="2" class="text-center">FINALIZADO
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr class="font-weight-bold">
+                                                                <td>
+                                                                    <img src="/src/team_11.png" alt="" style="width: 7%;"> Equipo 11
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">5</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <img src="/src/team_12.png" alt="" style="width: 7%;"> Equipo 12
+                                                                </td>
+                                                                <td>
+                                                                    <span class="badge badge-pill badge-info">3</span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>                                      
+                                    </div>                                   
+                                </div>
+                                
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>            
+            </div>
             <div class="divider"></div>
             <section>
                 <div class="row">
